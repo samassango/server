@@ -2,9 +2,10 @@
   "name": "graphql-server",
   "version": "1.0.0",
   "description": "Star wars people endpoint wraped with apollo graphql",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "ts-node ./src/index.ts"
   },
   "repository": {
     "type": "git",
