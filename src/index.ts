@@ -7,6 +7,7 @@ import Redis from 'ioredis';
 const server = new ApolloServer({
     typeDefs, 
     resolvers,
+    introspection:true,
     cache: new BaseRedisCache({
         client: new Redis({
           host: 'redis-server',
