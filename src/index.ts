@@ -8,11 +8,11 @@ const server = new ApolloServer({
     typeDefs, 
     resolvers,
     introspection:true,
-    cache: new BaseRedisCache({
-        client: new Redis({
-          host: 'redis-server',
-        }),
-      }),
+    // cache: new BaseRedisCache({
+    //     client: new Redis({
+    //       host: 'redis-server',
+    //     }),
+    //   }),
     dataSources: () => ({
         peopleAPI: new PeopleAPI()
       })});
