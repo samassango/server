@@ -10,7 +10,7 @@ const server = new ApolloServer({
         peopleAPI: new PeopleAPI()
       })});
 
-server.listen().then(({url}:{url: string}) => {
+server.listen({ port: process.env.PORT || 4000 }).then(({url}:{url: string}) => {
     console.log(`Server listening at ${url}`);
 })
 
