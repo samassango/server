@@ -1,4 +1,3 @@
-//const {  RESTDataSource }  = require('apollo-datasource-rest');
 import { RESTDataSource, RequestOptions } from 'apollo-datasource-rest';
 const API_URL = 'https://swapi.dev/api/';
 
